@@ -28,12 +28,16 @@ class Test(unittest.TestCase):
         # Opening hipolabs.com
         hMainPage.click()
 
+        # Verifying hipolabs.com main page is opened (optional)
+        hLogo = driver.find_element_by_id("hipoLogo").get_attribute("id")
+        self.assertEqual("hipoLogo", hLogo, "Webpage is NOT hipolabs.com's main page")
+
         # Opening TEAM page in hipolabs.com
         hTeamPage = driver.find_element_by_id("menuMaximizedButtonTeam")
         time.sleep(1)  # Time.sleep function is used to avoid StaleElementReferenceException
         hTeamPage.click()
 
-        # Verifying "APPLY for INTERNSHIP" text is exist
+        # Verifying "APPLY FOR INTERNSHIP" text is exist
         teamPage_html_source = driver.page_source
         assert "APPLY FOR INTERNSHIP" in teamPage_html_source, "APPLY FOR INTERNSHIP text does NOT exist"
 
