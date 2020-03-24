@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 
 class Test(unittest.TestCase):
     def test_firsttest(self):
-        # Starting our WebDriver and navigate to Google
+        # Starting our WebDriver and navigating to Google
         driver_path = "/Users/didem/Downloads/chromedriver"
         driver = webdriver.Chrome(executable_path=driver_path)
         driver.get("https://www.google.com.tr/")
@@ -20,7 +20,7 @@ class Test(unittest.TestCase):
         searchField.send_keys("Hipo Labs")
         searchField.send_keys(Keys.RETURN)
 
-        # Gathering search results to verify hipolabs.com is listed
+        # Verify hipolabs.com is listed
         hMainPage = driver.find_element_by_xpath("//a[contains(@href,'hipolabs.com')]")
         hMainLink = hMainPage.get_attribute("href")
         self.assertEqual("https://hipolabs.com/", hMainLink ,"hipolabs.com is NOT listed")
@@ -37,7 +37,7 @@ class Test(unittest.TestCase):
         time.sleep(1)  # Time.sleep function is used to avoid StaleElementReferenceException
         hTeamPage.click()
 
-        # Verifying "APPLY FOR INTERNSHIP" text is exist
+        # Verifying "APPLY FOR INTERNSHIP" text exist
         teamPage_html_source = driver.page_source
         assert "APPLY FOR INTERNSHIP" in teamPage_html_source, "APPLY FOR INTERNSHIP text does NOT exist"
 

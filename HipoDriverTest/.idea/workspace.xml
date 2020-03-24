@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d92c371-49dd-4e3c-addd-65d292669591" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/teampage.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/teampage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SeleniumScripts/DriverTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumScripts/DriverTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
