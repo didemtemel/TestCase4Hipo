@@ -35,7 +35,7 @@ class Test(unittest.TestCase):
 
         # Verifying "APPLY for INTERNSHIP" text is exist
         teamPage_html_source = driver.page_source
-        assert "APPLY for INTERNSHIP" in teamPage_html_source, "APPLY for INTERNSHIP text is NOT exist"
+        assert "APPLY FOR INTERNSHIP" in teamPage_html_source, "APPLY FOR INTERNSHIP text does NOT exist"
 
         # Taking screenshot
         screenshot_path = '/Users/didem/Desktop/TestCase4Hipo/HipoDriverTest/Screenshots/teampage.png'
